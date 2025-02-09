@@ -30,25 +30,8 @@
     <footer style="color:rgb(212, 33, 144)">CLICK HERE for Apply For UG III,V SEMESTERS ReValuation</footer><br>
     <button style="color:rgb(255, 238, 0);background-color: rgb(194, 12, 155);border-radius: 5px;">CLICK HERE</button>
     </div>
-    <script>
-        function getResult() {
-            var val = document.getElementById('num').value.trim();
-            
-            if (val === "") {
-                alert("Please enter your registration number!");
-                return;
-            }
-            
-            if (val.length !== 12 || isNaN(val)) {
-                alert("Invalid Registration Number! Must be 12 digits.");
-                return;
-            }
-
-            // Simulate fetching the SGPA (random number between 5.0 and 10.0)
-            const sgpa = (Math.random() * (10 - 5) + 5).toFixed(2);
-    
-            document.getElementById('Results').innerText = `SGPA: ${sgpa}`;
-        }
+    <script src="javascript.js">
+       
     </script>
     
 </body>
